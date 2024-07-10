@@ -1,6 +1,6 @@
-# SPRINT14
+# SPRINT14 - PROYECTO FINAL
 
-# PROYECTO FINAL - Análisis de Comportamiento de Usuarios en la Aplicación Móvil "Trash to Treasure"
+# Análisis de Comportamiento de Usuarios en la Aplicación Móvil "Trash to Treasure"
 
 ## Descripción del Proyecto
 
@@ -8,68 +8,41 @@ Este proyecto tiene como objetivo analizar el comportamiento de los usuarios de 
 
 ## Estructura del Proyecto
 
-El proyecto se divide en varias etapas clave:
+El proyecto se divide en varias etapas clave, cada una de las cuales fue cuidadosamente diseñada para asegurar un análisis completo y detallado:
 
 1. **Preprocesamiento de Datos**
-   - Carga y visualización de datos.
-   - Limpieza de datos: eliminación de valores nulos y duplicados, y conversión de tipos de datos.
-   - Unión de datasets en un solo conjunto de datos coherente.
+   - **Carga y visualización de datos:** Se realizó una primera inspección visual de los datos para identificar rápidamente cualquier anomalía o patrón inicial.
+   - **Limpieza de datos:** Eliminamos valores nulos y duplicados, y convertimos los tipos de datos para asegurar la integridad y consistencia de los datos.
+   - **Unión de datasets:** Combinamos los diferentes conjuntos de datos en uno solo para facilitar el análisis posterior.
 
 2. **Análisis Exploratorio de Datos (EDA)**
-   - Descripción estadística de los datos.
-   - Visualización inicial: distribución de eventos por tipo, número de eventos por día, y distribución de usuarios por fuente de descarga.
+   - **Descripción estadística de los datos:** Proporciona una base sólida para entender la distribución y las características de los datos.
+   - **Visualización inicial:** Creación de gráficos para visualizar la distribución de eventos por tipo, el número de eventos por día y la distribución de usuarios por fuente de descarga. Estas visualizaciones ayudan a identificar tendencias y patrones significativos.
 
 3. **Segmentación de Usuarios**
-   - Agrupación de usuarios según eventos completados utilizando algoritmos de clustering.
-   - Análisis de grupos: cálculo de métricas clave y verificación de la coherencia y significancia de los clusters.
+   - **Clustering:** Utilizamos algoritmos de clustering como K-Means para agrupar a los usuarios según sus interacciones con la aplicación. Este enfoque permite identificar grupos de usuarios con comportamientos similares.
+   - **Análisis de grupos:** Calculamos métricas clave para cada grupo y verificamos la coherencia y significancia de los clusters mediante visualizaciones y validación cruzada.
 
 4. **Prueba de Hipótesis**
-   - Hipótesis 1: Diferencia en conversión entre fuentes (Bing vs Google).
-   - Hipótesis 2: Definición y prueba de otra hipótesis basada en el análisis previo.
+   - **Hipótesis sobre conversión:** Formulamos y probamos hipótesis sobre la diferencia en la conversión entre usuarios que descargaron la aplicación desde diferentes fuentes (Bing vs Google). 
+   - **Pruebas adicionales:** Definimos y probamos hipótesis adicionales basadas en los insights obtenidos del análisis exploratorio.
 
 5. **Dashboards**
-   - Creación de dashboards interactivos en Tableau para visualizar métricas clave.
+   - **Visualización interactiva:** Creamos dashboards interactivos en Tableau para visualizar métricas clave de manera dinámica y facilitar la toma de decisiones basada en datos.
 
-## Requisitos
+## Motivación y Justificación
 
-- Python 3.6+
-- Librerías: pandas, numpy, matplotlib, seaborn, scikit-learn, scipy
-- Tableau para la creación de dashboards
+La metodología adoptada para este proyecto está basada en las mejores prácticas de análisis de datos y ciencia de datos. Cada etapa del proyecto fue diseñada para asegurar que los datos fueran procesados de manera efectiva y que los resultados obtenidos fueran significativos y accionables:
 
-## Uso
+- **Preprocesamiento de Datos:** La limpieza y unión de datos aseguran que el análisis se realice sobre un conjunto de datos coherente y libre de errores.
+- **Análisis Exploratorio de Datos:** Proporciona una comprensión profunda de los datos, permitiendo identificar patrones y tendencias que informan las etapas posteriores del análisis.
+- **Segmentación de Usuarios:** El uso de algoritmos de clustering permite identificar grupos de usuarios con comportamientos similares, lo cual es crucial para personalizar la experiencia del usuario y optimizar las estrategias de marketing.
+- **Prueba de Hipótesis:** Las pruebas estadísticas validan los insights obtenidos del análisis exploratorio, asegurando que las diferencias observadas entre grupos sean estadísticamente significativas.
+- **Dashboards:** Las visualizaciones interactivas facilitan la comprensión de los resultados y permiten a los stakeholders tomar decisiones informadas basadas en datos.
 
-1. **Preprocesamiento de Datos:**
-   Ejecuta el script `preprocessing.py` para cargar, limpiar y unir los datasets.
-   ```bash
-   python preprocessing.py
-   ```
+## Resultados y Recomendaciones
 
-2. **Análisis Exploratorio de Datos (EDA):**
-   Ejecuta el script `eda.py` para realizar el análisis exploratorio y visualizar los datos.
-   ```bash
-   python eda.py
-   ```
-
-3. **Segmentación de Usuarios:**
-   Ejecuta el script `segmentation.py` para agrupar a los usuarios y analizar los clusters.
-   ```bash
-   python segmentation.py
-   ```
-
-4. **Prueba de Hipótesis:**
-   Ejecuta el script `hypothesis_testing.py` para realizar las pruebas de hipótesis.
-   ```bash
-   python hypothesis_testing.py
-   ```
-
-5. **Dashboards:**
-   Importa los datos procesados a Tableau para crear los dashboards interactivos según las instrucciones en `dashboard_instructions.md`.
-
-## Resultados
-
-Los resultados del análisis y las visualizaciones están disponibles en la carpeta `results/`. Incluyen gráficos, tablas y resúmenes de las pruebas de hipótesis.
-
-## Recomendaciones
+Los resultados del análisis revelaron varios insights clave sobre el comportamiento de los usuarios. Basado en estos insights, se formularon las siguientes recomendaciones:
 
 1. Mejorar la interacción con sugerencias (tips).
 2. Optimizar la experiencia de visualización de fotos.
@@ -90,4 +63,5 @@ Este proyecto está licenciado bajo la Licencia MIT. Consulta el archivo `LICENS
 
 ## Contacto
 
-Para cualquier consulta, por favor contacta a [BLAURY14@GMAIL.com](mailto:BLAURY14@GMAIL.com).
+Para cualquier consulta, por favor contacta a [blaury14@gmail.com](mailto:blaury14@gmail.com).
+
